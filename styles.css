@@ -1,2 +1,71 @@
 
-/* Your CSS Code here. */
+.container{
+	display:grid;
+	width:100vw;
+	height:100vh;
+	grid-template-rows:15% auto;
+	
+	grid-template-areas:
+		"nav nav nav"
+	    "video-gallery";
+	
+	
+}
+
+#video-gallery{
+	display:grid;
+	grid-template-rows: 50px auto;
+	grid-template-areas: 
+		"title title title"
+	    "video-1 video-2 video-3";
+	width:100vw;
+	height:100vh;
+	justify-content:space-evenly
+
+}
+
+h1{
+	grid-area:title;
+	text-align:center;
+	
+}
+#video-1{
+	grid-area:video-1
+}
+#video-2{
+	grid-area:video-2
+}
+#video-3{
+	grid-area:video-3
+}
+
+.container>nav>ul{
+	display:flex;
+	justify-content:space-around
+}
+
+.container>nav>ul>li{
+	list-style-type:none;
+	padding-block:40px;
+}
+.container>nav>ul>li>a{
+	text-decoration:none;
+	color:black;
+	font-size:1.5em;
+	
+}
+nav{
+	background-color:aliceblue;
+	box-shadow:0px 5px 10px skyblue;
+}
+
+
+
+
+
+
+
+
+
+
+
